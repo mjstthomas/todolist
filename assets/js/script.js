@@ -14,4 +14,8 @@ $("input[type= 'text']").keypress(function(event){
 		$(this).val("");
 		$("ul").append("<li><span class= 'trash'><i class='far fa-trash-alt'></i></span> "+ todoText + "</li>")
 	}
-})
+});
+
+$("#add").click(function(){
+	$("input[type='text']").fadeToggle();
+});
